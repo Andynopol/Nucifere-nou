@@ -1,13 +1,13 @@
 import React from 'react';
 import MenuItem from '../MenuItem';
 
-import image from '../../img/buton_home.jpg';
+import image from '../../img/home.svg';
 
 export default class NavMenu extends React.Component{
     render(){
         return(
             <ul>
-                <li className="nav-menu-item"><div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div></li>
+                <li className="nav-menu-item"><img src={image}/></li>
                 <MenuItem name="Home" className="nav-menu-item" />
                 <MenuItem name="Infiintarea livezilor de nuc" className="nav-menu-item" />
                 <MenuItem name="Afaceri cu nuci" className="nav-menu-item" />
