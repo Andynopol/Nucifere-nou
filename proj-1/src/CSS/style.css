@@ -1,6 +1,5 @@
 div{
     margin: 0;
-    padding: 10px;
 }
 
 .container {
@@ -9,9 +8,9 @@ div{
     position: relative;
     margin: auto;
     grid-gap: 10px;
-    grid-template-areas: "header header"
-                        "nav		nav"
-                        "left		right"
+    grid-template-areas: "nav nav"
+                        "header	header"
+                        "left	right"
                         "footer	footer";
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 150px 200px 600px 200px;

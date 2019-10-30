@@ -4,7 +4,7 @@ export default class Nav extends React.Component{
     render(){
         return(
             <nav>
-                <h1>Nav</h1>
+                <div className="test"><h1>Nav</h1></div>
             </nav>
         );
     }
