@@ -9,7 +9,10 @@ export default class NavMenu extends React.Component{
             <ul className="nav-menu">
                 <li className="nav-menu-item"><img id="home-btn" src={image}/></li>
                 <div className="item-wrapper">
-                    <MenuItem id="init-livezi" name="Infiintarea livezilor de nuc" className="nav-menu-item" />
+                    <MenuItem name="Proiecte" className="nav-menu-item" />
+                </div>
+                <div className="item-wrapper">
+                    <MenuItem name="Infiintarea livezilor de nuc" className="nav-menu-item" />
                     <div id="init-livezi-menu" className="dropdown-menu">
                         <ul className="dropdown-list">
                             <MenuItem name="Analiza premergatoare" className="dropdown-item" />

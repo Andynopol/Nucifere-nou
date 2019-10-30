@@ -8,15 +8,28 @@ import Footer from './footer/Footer';
 import '../CSS/style.css';
 
 export default class Body extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            page:'Home'
+        }
+        this.changePage = this.changePage.bind(this)
+    }
     render(){
-        return(
-            <div className="container">
-                <Header />
-                <Nav />
-                <Left />
-                <Right />
-                <Footer />
-            </div>
-        );
+        if(this.state.page === 'Home'){
+            return(
+                <div className="container">
+                    <Header />
+                    <Nav />
+                    <Left />
+                    <Right />
+                    <Footer />
+                </div>
+            );
+        }
+    }
+
+    changePage(newPage){
+        this.setState({page:newPage});
     }
 }
