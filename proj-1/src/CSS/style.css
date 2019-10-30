@@ -47,9 +47,10 @@ nav {
 }
   
 footer {
-    background-color: dodgerblue;
+    background-color: #cadca6;;
     grid-area: footer;
     width: 100%;
+    padding: 10px;
 }
 
 .nav-menu{
@@ -164,4 +165,21 @@ footer {
 
 .item-wrapper:hover #init-livezi-menu{
     display: block;
+}
+
+footer p{
+    font-weight: bold;
+    color: rgb(70, 70, 70);
+    margin:0px;
+}
+
+footer img{
+    display: flex;
+    float: right;
+    position: relative;
+    right: 50px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
 }
