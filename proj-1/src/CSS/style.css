@@ -4,13 +4,13 @@ div{
 
 .container {
     display: grid;
-    max-width: 70%;
+    max-width: 100%;
     position: relative;
     margin: auto;
     grid-gap: 10px;
-    grid-template-areas: "nav nav"
-                        "header	header"
-                        "left	right"
+    grid-template-areas: "header header"
+                        "nav nav"
+                        "left right"
                         "footer	footer";
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 150px 200px 600px 200px;
@@ -23,7 +23,6 @@ header {
 }
   
 nav {
-    background-color: beige;
     grid-area: nav;
 }
   
@@ -40,4 +39,32 @@ nav {
 footer {
     background-color: dodgerblue;
     grid-area: footer;
+}
+
+ul{
+    width: 100%;
+    border: 1px solid rgb(170, 118, 87);
+    background-color:  #752d00;
+    margin: 0px;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    text-justify: auto;
+}
+
+.nav-menu-item{
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-left: 0.5px solid rgb(199, 174, 168);
+}
+
+.nav-menu-item:hover{
+    color: rgb(213, 216, 38);
+}
+
+.nav-menu-item:last-child{
+    border-right: 0.5px solid rgb(199, 174, 168);
 }
