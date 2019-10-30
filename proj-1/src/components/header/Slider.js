@@ -16,7 +16,7 @@ export default class Slider extends React.Component{
             infinite: true,
             arrows: false,
             onChange: (oldIndex, newIndex) => {
-              console.log(`slide transition from ${oldIndex} to ${newIndex}`);
+              return;
             }
           }
 

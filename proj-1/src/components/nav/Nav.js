@@ -1,6 +1,5 @@
 import React from 'react';
 import NavMenu from './NavMenu';
-import MenuItem from '../MenuItem';
 
 export default class Nav extends React.Component{
     constructor(props){
@@ -9,6 +8,7 @@ export default class Nav extends React.Component{
             scrolled: false,
 
         };
+        this.handleOnClick = this.handleOnClick.bind(this);
     }
 
     componentWillMount(){
@@ -33,9 +33,13 @@ export default class Nav extends React.Component{
     render(){
         return(
             <nav className={ this.state.scrolled ? 'nav-scrolled' : 'nav' }>
-                <NavMenu />
+                <NavMenu onClick={this.handleOnClick} />
             </nav>
         );
     }
 
+    handleOnClick(name){
+        this.props.onClick(name);
+        //console.log(name);
+    }
 }

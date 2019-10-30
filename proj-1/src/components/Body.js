@@ -16,20 +16,23 @@ export default class Body extends React.Component{
         this.changePage = this.changePage.bind(this)
     }
     render(){
-        if(this.state.page === 'Home'){
+        // if(this.state.page === 'Home'){
+            console.log(this.state.page);
             return(
                 <div className="container">
                     <Header />
-                    <Nav />
+                    <Nav onClick={this.changePage} />
                     <Left />
                     <Right />
                     <Footer />
                 </div>
             );
-        }
+        // }
     }
 
     changePage(newPage){
-        this.setState({page:newPage});
+        this.setState({
+            page: newPage
+        });
     }
 }
