@@ -49,7 +49,7 @@ ul{
     padding: 10px;
     color: #fff;
     text-align: center;
-    text-justify: auto;
+    text-justify: center;
 }
 
 .nav-menu-item{
@@ -58,13 +58,8 @@ ul{
     padding-right: 10px;
     text-transform: uppercase;
     cursor: pointer;
-    border-left: 0.5px solid rgb(199, 174, 168);
 }
 
 .nav-menu-item:hover{
     color: rgb(245, 214, 114)
-}
-
-.nav-menu-item:last-child{
-    border-right: 0.5px solid rgb(199, 174, 168);
 }
