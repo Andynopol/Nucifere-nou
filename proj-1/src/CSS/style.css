@@ -12,7 +12,7 @@ div{
                         "left right"
                         "footer	footer";
     grid-template-columns: 2fr 3fr;
-    grid-template-rows: 100px 70px 1000px 130px;
+    grid-template-rows: 100px 50px 1000px 130px;
   }
   
   
@@ -27,6 +27,7 @@ header {
 nav {
     grid-area: nav;
     width: 100%;
+    background: #fff;
 }
 
 .nav-scrolled{
@@ -39,11 +40,13 @@ nav {
 .left {
     grid-area: left;
     padding: 10px;
+    background: #fff;
 }
   
 .right {
     grid-area: right;
     padding: 10px;
+    background: #fff;
 }
   
 footer {
