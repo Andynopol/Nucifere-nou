@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from './header/Header';
 import Nav from './nav/Nav';
-import Left from './left/Left';
-import Right from './right/Right';
+import Left from './home/Left';
+import Right from './home/Right';
 import Footer from './footer/Footer';
 
 import '../CSS/style.css';
