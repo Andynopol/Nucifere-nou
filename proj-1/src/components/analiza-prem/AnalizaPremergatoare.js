@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../header/Header';
 import Nav from '../nav/Nav';
 import Footer from '../footer/Footer';
+import Container from './Container';
 
 export default class AnalizaPremergatoare extends React.Component{
     constructor(props){
@@ -11,11 +12,9 @@ export default class AnalizaPremergatoare extends React.Component{
 
     render(){
         return(
-            <div className="container">
-                    <Header />
-                    <Nav onClick={this.handleonClick} />
-                    <Footer />
-                </div>
+            <div>
+                <Container/>
+            </div>
         );
     }
 

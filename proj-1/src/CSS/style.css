@@ -15,7 +15,7 @@ div{
     grid-template-rows: 100px 50px 1000px 130px;
 }
 
-.home-container {
+/* .home-container {
     display: grid;
     max-width: 100%;
     position: relative;
@@ -26,7 +26,16 @@ div{
                         "footer	footer";
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 100px 50px 1000px 130px;
-  }
+  } */
+
+.home-container {
+    display: grid;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    grid-template-areas: "left right";
+    grid-template-columns: 2fr 3fr;
+}
   
   
 header {
