@@ -22,14 +22,6 @@ export default class Nav extends React.Component{
         })
     }
 
-    componentWillUnmount(){
-        window.removeEventListener('scroll');
-    }
-
-    componentDidMount(){
-
-    }
-
     render(){
         return(
             <nav className={ this.state.scrolled ? 'nav-scrolled' : 'nav' }>

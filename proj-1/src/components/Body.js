@@ -1,11 +1,11 @@
 import React from 'react';
 import Header from './header/Header';
 import Nav from './nav/Nav';
-import Left from './home/Left';
-import Right from './home/Right';
+import Home from './home/Home';
 import Footer from './footer/Footer';
-
+import AnalizaPremergatoare from './analiza-prem/AnalizaPremergatoare';
 import '../CSS/style.css';
+
 
 export default class Body extends React.Component{
     constructor(props){
@@ -15,24 +15,43 @@ export default class Body extends React.Component{
         }
         this.changePage = this.changePage.bind(this)
     }
+
     render(){
-        // if(this.state.page === 'Home'){
-            console.log(this.state.page);
+        console.log(this.state.page);
+        if(this.state.page ==='Home'){
             return(
                 <div className="container">
                     <Header />
-                    <Nav onClick={this.changePage} />
-                    <Left />
-                    <Right />
+                    <Nav onClick={this.changePage}/>
+                    <Home/>
                     <Footer />
                 </div>
             );
-        // }
+        }
+        else if(this.state.page ==='Analiza premergatoare'){
+            return(
+                <div className="container">
+                    <Header />
+                    <Nav onClick={this.changePage}/>
+                    <AnalizaPremergatoare/>
+                    <Footer />
+                </div>
+            );
+        }
+        else{
+            return(
+                <div className="container">
+                    <Header />
+                    <Nav onClick={this.changePage}/>
+                    <Home/>
+                    <Footer />
+                </div>
+            );
+        }
     }
 
     changePage(newPage){
-        this.setState({
-            page: newPage
-        });
+        console.log(this.state.page);
+        this.setState({page: newPage});
     }
 }
