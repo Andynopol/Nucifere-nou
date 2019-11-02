@@ -8,7 +8,7 @@ export default class LiveziFamiliale extends React.Component{
         return(
             <div className='page-wrapper'>
                 <PageTitle name="Livezi Familiale"/>
-                <p className='article'>
+                <p id='first-pg' className='article'>
                     <img id="livada-img" src={image}/>
                     Livezile familiale sunt acele livezi realizate  pe suprafete mici, astfel incat 
                     terenurile detinute de o familie sa fie valorificate cat mai bine.

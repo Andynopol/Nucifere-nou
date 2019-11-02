@@ -9,7 +9,7 @@ export default class LiveziComerciale extends React.Component{
         return(
             <div className='page-wrapper'>
                 <PageTitle name="Livezi Comerciale"/>
-                <p className='article'>
+                <p id='first-pg' className='article'>
                     <img id="livada-img" src={image1}/>
                     Livezile comerciale sunt acele livezi realizate pe suprafete mai mari de 10 hectare si care, de obicei, sunt administrate de catre o persoana juridica.
                     Productia obtinuta este supusa in mod obligatoriu proceselor de conditionare, procesare, depozitare, industrializare si comercializare intr-un cadru organizat.
@@ -25,7 +25,7 @@ export default class LiveziComerciale extends React.Component{
                     Din punct de vedere legal, infiintarea unei livezi comerciale poate avea loc numai cu puieti achizitionati dintr-o pepiniera autorizata.
                 </p>
                 <p className='article'>
-                    <img style={{float: 'left', height: 210, marginRight: 10, marginLeft: 0}} id="livada-img" src={image1}/>
+                    <img style={{float: 'left', height: 210, marginRight: 10, marginLeft: 0}} id="livada-img" src={image2}/>
                         In linii mari, infiintarea unei livezi comerciale presupune derularea urmatorilor pasi absolut obligatorii:
                         <br/>
                         1. Realizarea unui studiu pedologic pentru relevarea caracteristicilor fizico-chimice ale solului;

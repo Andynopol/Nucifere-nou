@@ -24,7 +24,7 @@ export default class NavMenu extends React.Component{
             <ul className="nav-menu">
                 <li className="nav-menu-item"><img onClick={this.handleImgClick} id="home-btn" src={image}/></li>
                 <div className="item-wrapper">
-                    <MenuItem onClick={this.handleOnClick} name="Proiecte" className="nav-menu-item" />
+                    <MenuItem name="Proiecte" className="nav-menu-item" />
                     <div id="init-livezi-menu" className="dropdown-menu">
                         <ul className="dropdown-list">
                             <MenuItem onClick={this.handleOnClick} name="Proiecte finalizate" className="dropdown-item" />

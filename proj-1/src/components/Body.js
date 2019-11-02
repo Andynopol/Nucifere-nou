@@ -15,6 +15,8 @@ import MaterialeSiUtilaje from './infiintare-livezi-de-nuc/MaterialeSiUtilaje';
 //Afaceri cu nuci
 import LiveziFamiliale from './afaceri-cu-nuci/LiveziFamiliale';
 import LiveziComerciale from './afaceri-cu-nuci/LiveziComerciale';
+import DepozitareNuci from './afaceri-cu-nuci/DepozitareNuci';
+import Exportatori from './afaceri-cu-nuci/Exportatori';
 
 //CSS
 import '../CSS/style.css';
@@ -110,6 +112,26 @@ export default class Body extends React.Component{
                     <Header onClick={this.changePage} />
                     <Nav onClick={this.changePage}/>
                     <LiveziComerciale/>
+                    <Footer />
+                </div>
+            );
+        }
+        else if(this.state.page === 'Depozitarea nucilor'){
+            return(
+                <div className="container">
+                    <Header onClick={this.changePage} />
+                    <Nav onClick={this.changePage}/>
+                    <DepozitareNuci/>
+                    <Footer />
+                </div>
+            );
+        }
+        else if(this.state.page === 'Exportatori'){
+            return(
+                <div className="container">
+                    <Header onClick={this.changePage} />
+                    <Nav onClick={this.changePage}/>
+                    <Exportatori/>
                     <Footer />
                 </div>
             );

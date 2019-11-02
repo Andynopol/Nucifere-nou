@@ -6,7 +6,7 @@ export default class ProiectInfiintare extends React.Component{
         return(
             <div className='page-wrapper'>
                 <PageTitle name="Proiectul tehnic de autorizare a plantarii unei livezi de nuc"/>
-                <p className='article'>
+                <p style={{paddingBottom: 0}} id='first-pg' className='article'>
                     Potrivit <strong><a className='link' style={{color:'#2e4e08'}} target='+_blank' herf='http://www.dreptonline.ro/legislatie/legea_pomiculturii_348_2003_republicat_2008.php'> Legii pomiculturii, legea nr. 348/2003, republicata 2008</a></strong>, pentru plantatiile 
                     cu suprafata mai mare de 2 (doua) hectare autorizatia de plantare se elibereaza in baza 
                     unui proiect de infiintare a plantatiei pomicole elaborat de persoane autorizate si 
