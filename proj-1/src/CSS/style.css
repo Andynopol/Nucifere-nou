@@ -218,10 +218,12 @@ footer img{
 #book-homepage{
     background-color: #e7f0d8;
     border: 1px solid #608230;
+    min-height: 170px;
 }
 
 #book-wrapper{
     float: left;
+    min-height: 200px;
 }
 
 #book-title{
@@ -338,7 +340,7 @@ strong{
     line-height: 14px;
 }
 
-#page-title{
+.page-title{
     font-size: 26px;
     color: #5a2403;
     text-align: left;
@@ -363,6 +365,12 @@ strong{
     
 }
 
+#article{
+    background-color: #f8f2e9;
+    border: 1px solid #c5b090;
+    border-radius: 12px;
+}
+
 .item{
     font-size: 16px;
     color: #000;
@@ -373,11 +381,34 @@ strong{
     text-decoration: none;
 }
 
-#livada-img{
+.livada-img{
     float: right;
     width:300px;
     height: 200px;
     margin: 0px 0px 4px 13px;
     padding: 5px;
     border: 1px solid #b2ce78;
+}
+
+#home-article-title{
+    padding: 0;
+    margin: 10px;
+    border-bottom: 1px solid #e0caaa;
+}
+
+#proj-description{
+    padding: 10px;
+    margin:0;
+    font-weight: bold;
+    color: #5a2403;
+}
+
+#proj-img{
+    width: 140px;
+    height: 100px;
+    margin-bottom: 15px;
+    position: relative;
+    bottom: 10px;
+    border: none;
+    padding: 0;
 }

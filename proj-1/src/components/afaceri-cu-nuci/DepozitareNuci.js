@@ -11,7 +11,7 @@ export default class DepozitareNuci extends React.Component{
             <div className='page-wrapper'>
                 <PageTitle name='Depozitare Nuci'/>
                 <p id='first-pg' className="article">
-                    <img style={{float: 'left', marginRight:10, height:280, width: 200}} id='livada-img' src={image1} />
+                    <img style={{float: 'left', marginRight:10, height:280, width: 200}} className='livada-img' src={image1} />
                     1. Spalarea nucilor : Dupa recoltare , se aleg nucile care sunt inca cu coaja verde de cele care sunt fara coaja si curate. Nucile pe care mai sunt coji deverzi se baga in saci de urzica sau canepa si se umezesc bine, dupa care se depoziteaza pentru 1-2 zile la umbra. Dupa acest interval , coajaverde se desprinde cu usurinta de nuca. Frunctele pe care sunt vizibile pete de suc verde de coaja se spala imediat, cate 2-3 minute in apa rece.
                     <br/>
                     2. Uscarea nucilor: se face sub jet de aer cald sau in locuri foarte bine ventilate. Nucile seaseaza in straturi de maxim 25 cm grosime in locuri foarte bine ventilate si seravasesc de 3-4 ori pe zi. Pot fi uscate si la soare.
@@ -21,7 +21,7 @@ export default class DepozitareNuci extends React.Component{
                     4. Ambalarea nucilor: In vederea depozitarii, nucile se ambaleaza in saci de minim 25 de kg si maxim 200 de kg, in spatii curate, bine ventilate si ferite de rozatoare
                 </p>
                 <p style={{paddingTop:0}} className='article'>
-                    <img style={{height:210}} id='livada-img' src={image2} />
+                    <img style={{height:210}} className='livada-img' src={image2} />
                     5. Depozitarea propriu-zisa : poate avea loc pana la 2 ani , daca s-au respectat corespunzator cerintele de spalare si dezinfectare. este recomandabila depozitarea nucilor numai in coaja. Miezul de nuca curat este recomandat sa fie valorificat intr-o perioada de timp cuprinsa intre 30 si 60 de zile, numai in conditiile in care acesta este ambalat in cutii de carton cu hartie pe interior sau in saci de polietilena vidati.
                     <br/>
                     <br/>
