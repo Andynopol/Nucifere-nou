@@ -13,7 +13,7 @@ export default class Nav extends React.Component{
 
     componentWillMount(){
         window.addEventListener('scroll',()=>{
-            const isTop = window.scrollY < 100;
+            const isTop = window.scrollY < 112;
             !isTop?
                 this.setState({ scrolled: true })
             :
