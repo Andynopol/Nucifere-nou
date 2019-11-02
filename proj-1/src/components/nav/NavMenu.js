@@ -35,7 +35,7 @@ export default class NavMenu extends React.Component{
                             <MenuItem onClick={this.handleOnClick} name="Servicii specializate" className="dropdown-item" />
                             <MenuItem onClick={this.handleOnClick} name="Material Saditor" className="dropdown-item" />
                             <MenuItem onClick={this.handleOnClick} name="Materiale si utilaje" className="dropdown-item" />
-                            <MenuItem onClick={this.handleOnClick} name="Consultanta infiitare" className="dropdown-item" />
+                            {/* <MenuItem onClick={this.handleOnClick} name="Consultanta infiitare" className="dropdown-item" /> */}
                         </ul>
                     </div>
                 </div>
