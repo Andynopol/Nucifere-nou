@@ -21,6 +21,11 @@ import Exportatori from './afaceri-cu-nuci/Exportatori';
 //Soiuri de nuc
 import Soiuri from './soiuri-de-nuc/Soiuri';
 
+//Evenimente
+import ConferinteZonale from './evenimente/ConferinteZonale';
+import PrezentariExclusive from './evenimente/PrezentariExclusive';
+import Workshop from './evenimente/Workshop';
+
 //CSS
 import '../CSS/style.css';
 
@@ -146,6 +151,27 @@ export default class Body extends React.Component{
                     <Header onClick={this.changePage} />
                     <Nav onClick={this.changePage}/>
                     <Soiuri/>
+                    <Footer />
+                </div>
+            );
+        }
+        //Evenimente
+        else if(this.state.page === 'Prezentari exclusive'){
+            return(
+                <div className="container">
+                    <Header onClick={this.changePage} />
+                    <Nav onClick={this.changePage}/>
+                    <PrezentariExclusive/>
+                    <Footer />
+                </div>
+            );
+        }
+        else if(this.state.page === 'Conferinte zonale'){
+            return(
+                <div className="container">
+                    <Header onClick={this.changePage} />
+                    <Nav onClick={this.changePage}/>
+                    <ConferinteZonale/>
                     <Footer />
                 </div>
             );
