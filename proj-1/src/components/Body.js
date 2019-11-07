@@ -18,6 +18,9 @@ import LiveziComerciale from './afaceri-cu-nuci/LiveziComerciale';
 import DepozitareNuci from './afaceri-cu-nuci/DepozitareNuci';
 import Exportatori from './afaceri-cu-nuci/Exportatori';
 
+//Soiuri de nuc
+import Soiuri from './soiuri-de-nuc/Soiuri';
+
 //CSS
 import '../CSS/style.css';
 
@@ -132,6 +135,17 @@ export default class Body extends React.Component{
                     <Header onClick={this.changePage} />
                     <Nav onClick={this.changePage}/>
                     <Exportatori/>
+                    <Footer />
+                </div>
+            );
+        }
+        //Soiuri de nuc
+        else if(this.state.page === 'Soiuri de nuc'){
+            return(
+                <div className="container">
+                    <Header onClick={this.changePage} />
+                    <Nav onClick={this.changePage}/>
+                    <Soiuri/>
                     <Footer />
                 </div>
             );

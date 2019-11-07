@@ -60,7 +60,7 @@ export default class NavMenu extends React.Component{
                     </div>
                 </div>
                 <div className="item-wrapper">
-                    <MenuItem onClick={this.handleOnClick} name="Soiuri de nuci" className="nav-menu-item" />
+                    <MenuItem onClick={this.handleOnClick} name="Soiuri de nuc" className="nav-menu-item" />
                 </div>
                 <div className="item-wrapper">
                     <MenuItem name="Evenimente" className="nav-menu-item" />

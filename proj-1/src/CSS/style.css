@@ -365,6 +365,21 @@ strong{
     
 }
 
+.table{
+    font-size: 18px;
+    color: #000;
+    text-align: justify;
+    line-height: 19px;
+    margin-bottom: 3px;
+    padding: 10px;
+    padding-left: 20px;
+    margin: auto;
+}
+
+#table-description{
+    font-size: 20px;
+}
+
 #article{
     background-color: #f8f2e9;
     border: 1px solid #c5b090;
@@ -379,6 +394,7 @@ strong{
 
 .link{
     text-decoration: none;
+    font-weight: bold;
 }
 
 .livada-img{
