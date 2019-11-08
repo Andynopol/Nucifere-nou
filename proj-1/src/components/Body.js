@@ -29,6 +29,10 @@ import Workshop from './evenimente/Workshop';
 //Social
 import Social from './Social/Social';
 
+//Proiecte
+import ProiecteFinalizate from './Proiecte/ProiecteFinalizate';
+import ProiecteOngoing from './Proiecte/ProiecteOngoing';
+
 //CSS
 import '../CSS/style.css';
 
@@ -195,6 +199,26 @@ export default class Body extends React.Component{
                     <Header onClick={this.changePage} />
                     <Nav onClick={this.changePage}/>
                     <Social />
+                    <Footer />
+                </div>
+            );
+        }
+        else if(this.state.page === 'Proiecte in derulare'){
+            return(
+                <div className="container">
+                    <Header onClick={this.changePage} />
+                    <Nav onClick={this.changePage}/>
+                    <ProiecteOngoing />
+                    <Footer />
+                </div>
+            );
+        }
+        else if(this.state.page === 'Proiecte finalizate'){
+            return(
+                <div className="container">
+                    <Header onClick={this.changePage} />
+                    <Nav onClick={this.changePage}/>
+                    <ProiecteFinalizate />
                     <Footer />
                 </div>
             );
