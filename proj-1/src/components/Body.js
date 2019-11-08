@@ -26,6 +26,9 @@ import ConferinteZonale from './evenimente/ConferinteZonale';
 import PrezentariExclusive from './evenimente/PrezentariExclusive';
 import Workshop from './evenimente/Workshop';
 
+//Social
+import Social from './Social/Social';
+
 //CSS
 import '../CSS/style.css';
 
@@ -182,6 +185,16 @@ export default class Body extends React.Component{
                     <Header onClick={this.changePage} />
                     <Nav onClick={this.changePage}/>
                     <Workshop />
+                    <Footer />
+                </div>
+            );
+        }
+        else if(this.state.page === 'Social'){
+            return(
+                <div className="container">
+                    <Header onClick={this.changePage} />
+                    <Nav onClick={this.changePage}/>
+                    <Social />
                     <Footer />
                 </div>
             );
