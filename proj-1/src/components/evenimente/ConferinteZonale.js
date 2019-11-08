@@ -7,7 +7,7 @@ export default class ConferinteZonale extends React.Component{
         return(
             <div className="page-wrapper">
                 <PageTitle name="Conferinte zonale" />
-                <p className="article">
+                <p id='first-pg' className="article">
                     In curand...
                 </p>
             </div>

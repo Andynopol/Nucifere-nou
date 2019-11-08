@@ -6,7 +6,7 @@ export default class MaterialSaditor extends React.Component{
         return(
             <div className='page-wrapper'>
                 <PageTitle name='Material Saditor'/>
-                <p className='article'>
+                <p id='first-pg' className='article'>
                     In curs de actualizare…
                 </p>
             </div>

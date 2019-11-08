@@ -428,3 +428,18 @@ strong{
     border: none;
     padding: 0;
 }
+
+td{
+    vertical-align:center;
+}
+
+#workshop-list{
+    margin-top: 0;
+    list-style: none;
+}
+
+.hazelnut-list-style{
+    width: 10px;
+    height: 10px;
+    margin-right: 3;
+}

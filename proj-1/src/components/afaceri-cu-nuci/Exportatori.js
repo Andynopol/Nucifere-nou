@@ -6,7 +6,7 @@ export default class Exportatori extends React.Component{
         return(
             <div className='page-wrapper'>
                 <PageTitle name="Exportatori" />
-                <p className="article">
+                <p id='first-pg' className="article">
                     In curand...
                 </p>
             </div>

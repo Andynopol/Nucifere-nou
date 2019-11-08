@@ -176,6 +176,16 @@ export default class Body extends React.Component{
                 </div>
             );
         }
+        else if(this.state.page === 'Workshop-uri'){
+            return(
+                <div className="container">
+                    <Header onClick={this.changePage} />
+                    <Nav onClick={this.changePage}/>
+                    <Workshop />
+                    <Footer />
+                </div>
+            );
+        }
         else{
             this.state.page = 'Home'
             return(

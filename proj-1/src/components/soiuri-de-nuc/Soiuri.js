@@ -8,7 +8,7 @@ export default class Soiuri extends React.Component{
             <div className="page-wrapper">
                 <PageTitle name="Soiuri de nuc" />
 
-                <p className="article">
+                <p id='first-pg' className="article">
                 Pentru persoanele si firmele interesate pentru accesarea fondurilor europene pentru 
                 infiintarea livezilor de nuc prin PNDR 2014-2020, iata lista soiurilor de nuc ce pot 
                 face obiectul acestor proiecte, potrivit <a target='_blank' style={{color:'#2e4e08'}} className="link" href="https://cpvoextranet.cpvo.europa.eu/#/login">Community Plant Variety Office</a> :
